@@ -26,10 +26,6 @@ but make sure that the final product (with viewable source code) is
 hosted somewhere public and/or that one can download and view it locally 
 within a web browser. Thank you and good luck!
 
-### Mockups
-
-![Real Estate Listing Widget](comp.png)
-
 ## The Sorting Button
 * It sorts from Left to right, up to down in ascending order.
 * If small devices Up to down in ascending order.
