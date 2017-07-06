@@ -30,8 +30,4 @@ export class RealEstatesListingsComponent implements OnInit {
         error => this.errorMessage = <any>error
       ); 
   }
-
-  orderBy() : void {
-
-  }
 }
