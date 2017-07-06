@@ -29,3 +29,13 @@ within a web browser. Thank you and good luck!
 ## The Sorting Button
 * It sorts from Left to right, up to down in ascending order.
 * If small devices Up to down in ascending order.
+
+
+## To run the file
+* Download this repo or download the dest folder.
+* Run in local Server.
+* If no local server install.
+  * Download and Install NodeJS.
+  * Install the http-server package from npm (npm install -g http-server).
+  * In the root directory dest -> http-server.
+
