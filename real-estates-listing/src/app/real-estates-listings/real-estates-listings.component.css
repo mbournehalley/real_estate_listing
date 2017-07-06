@@ -1,0 +1,89 @@
+img {
+  height: 150px;
+}
+ul {
+  padding: 0;
+}
+ul li { 
+  list-style: none; display: inline; 
+}
+ul li:after { 
+  content: "\2022"; 
+}
+ul li:last-child:after { 
+  content: none; 
+}
+h1 {
+  font-size: 2.5rem;
+  margin: 0.20em 0;
+}
+h4.card-title {
+  margin: 0;
+}
+div.col-md-6 {
+  padding: 5px;
+}
+div.col-md-2 {
+  padding: 5px;
+}
+.built {
+  color:	#808080;
+  font-size: small;
+}
+.card {
+  flex-direction: row;
+  height: 170px;
+  padding: 10px;  
+}
+.card-block {
+  padding: 0 5px 0 5px;
+}
+.btn.btn-success {
+  background-color:	#8AD002;
+  border-color: #8AD002;
+}
+.btn.btn-success.active {
+  background-color: #0073EE;
+  border-color: #0073EE;
+}
+h5.title {
+  padding: 10px 5px 10px 5px;
+}
+
+/* 991px */
+@media only screen and (max-width: 991px) {
+  h1 {
+    font-size: 2.0em;
+  }
+  h4.card-title {
+    font-size: 1.0em;
+  }
+  ul.realEstate-details {
+    font-size: 0.75em;
+  }
+}
+/* 575px */
+@media only screen and (max-width: 575px) {
+  h1 {
+    font-size: 2.0em;
+  }
+  h4.card-title {
+    font-size: 1.1em;
+  }
+  ul.realEstate-details {
+    font-size: 0.75em;
+  }
+}
+/* 372px */
+@media only screen and (max-width: 372px) {
+  .card {
+    flex-direction: column;
+    height: auto;
+  }
+   h1 {
+    font-size: 1.5em;
+  }
+  img {
+    height: 250px;  
+  }
+}

@@ -1,0 +1,64 @@
+<section class="estates">
+  <div class="row">
+    <h5 class="title">Awesome Listings Widget</h5>
+  </div>
+  <div class="row">
+    <div class="col-md-2">
+      <label class="btn btn-success btn-block" 
+           btnRadio="price"
+           [(ngModel)]="order"
+           uncheckable>Price
+      </label>
+    </div>
+    <div class="col-md-2">
+      <label class="btn btn-success btn-block" 
+           btnRadio="beds"
+           [(ngModel)]="order"
+           uncheckable>Beds
+      </label>
+    </div>
+    <div class="col-md-2">
+      <label class="btn btn-success btn-block" 
+           btnRadio="sqft"
+           [(ngModel)]="order"
+           uncheckable>Sq. ft.
+      </label>
+    </div>
+  </div>  
+  <div class="row">
+    <div class="col-md-6" 
+         *ngFor="let realEstate of realEstates | orderBy: order">
+      <div class="card">
+        <img class="card-img-top" 
+           src="{{ realEstate.thumb }}" 
+           alt="Card image cap">
+        <div class="card-block">
+          <div class="built text-right" 
+               *ngIf="realEstate.built !== ''">
+            Built in {{ realEstate.built }}
+          </div>
+          <div class="built text-right" 
+               *ngIf="realEstate.built === ''">
+            &nbsp;
+          </div>
+          <a href="{{ realEstate.url }}">
+            <h4 class="card-title">
+              {{ realEstate.address | addressStreet }}
+            </h4>
+             <h4 class="card-title">
+              {{ realEstate.address | addressState }}
+            </h4>
+          </a>  
+          <h1>${{ realEstate.price  }}</h1>
+          <ul class="realEstate-details">
+            <li>{{ realEstate.beds }} beds </li>
+            <li>{{ realEstate.baths }} baths </li>  
+            <li *ngIf="realEstate.sqft !== ''">
+              {{ realEstate.sqft }} sq ft
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
